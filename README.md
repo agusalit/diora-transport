@@ -164,14 +164,30 @@ Domain: dioratransport.com
 
 Images: Unsplash
 
+- Photo by <a href="https://unsplash.com/@sebaspenalambarri?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sebastian Pena Lambarri</a> on <a href="https://unsplash.com/photos/pura-ulun-danu-bratan-indonesia-U_i6h9Y50wQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@lordfre?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Francesco La Corte</a> on <a href="https://unsplash.com/photos/green-trees-near-body-of-water-during-sunset-eFtb2SDBPaY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+- Photo by <a href="https://unsplash.com/@treesoftheplanet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Niklas Weiss</a> on <a href="https://unsplash.com/photos/green-rice-field--2WlTWZLnRc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+
+- Photo by <a href="https://unsplash.com/@silasbaisch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Silas Baisch</a> on <a href="https://unsplash.com/photos/sea-waves-ceITO2rlDgc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+- Photo by <a href="https://unsplash.com/@gohu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hugo Villegas</a> on <a href="https://unsplash.com/photos/mountain-over-bed-of-clouds-gJiG3zJZmr8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+- Photo by <a href="https://unsplash.com/@karthik_sreenivas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karthik Sreenivas</a> on <a href="https://unsplash.com/photos/a-large-waterfall-with-lots-of-water-cascading-down-it-OfTwnpabMSU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+- Photo by <a href="https://unsplash.com/@jannerboy62?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nick Fewings</a> on <a href="https://unsplash.com/photos/house-on-rock-formation-vVkayXvZnwQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      
+- Photo by <a href="https://unsplash.com/@sven_piek?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sven Piek</a> on <a href="https://unsplash.com/photos/aerial-view-of-people-on-beach-during-daytime-jH7EBc1GvCg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
 Icons: Font Awesome
 
 Font: Inter
 
-License: MIT
 
 ## 👨‍💻 Developer
 
-Developed with ❤️ by Alit
+Developed with ❤️ by Alit Putra
 
 A Computer Science student aspiring to become a full-stack developer and build software businesses in the future.

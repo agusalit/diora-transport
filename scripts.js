@@ -1,4 +1,9 @@
-// Navigation scroll effect
+
+'use strict';
+
+/* ============================================
+    NAVIGATION SCROLL EFFECT
+    ============================================ */
 window.addEventListener('scroll', function() {
     const header = document.getElementById('header');
     if (window.scrollY > 50) {
@@ -8,18 +13,33 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Mobile menu toggle
+/* ============================================
+    MOBILE MENU TOGGLE
+    ============================================ */
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('active');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    if (navLinks && menuToggle) {
+        navLinks.classList.toggle('active');
+        const isExpanded = navLinks.classList.contains('active');
+        menuToggle.setAttribute('aria-expanded', isExpanded);
+    }
 }
 
 function closeMenu() {
     const navLinks = document.getElementById('navLinks');
-    navLinks.classList.remove('active');
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+    if (navLinks && menuToggle) {
+        navLinks.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
 }
 
-// Smooth scrolling for anchor links
+/* ============================================
+    SMOOTH SCROLLING FOR ANCHOR LINKS
+    ============================================ */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -33,14 +53,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Close mobile menu when clicking outside
+/* ============================================
+    CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+    ============================================ */
 document.addEventListener('click', function(event) {
     const navLinks = document.getElementById('navLinks');
     const menuToggle = document.querySelector('.menu-toggle');
+    
+    if (!navLinks || !menuToggle) return;
+    
     const isClickInsideNav = navLinks.contains(event.target);
     const isClickOnToggle = menuToggle.contains(event.target);
-    
+
     if (!isClickInsideNav && !isClickOnToggle && navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
+        closeMenu();
+    }
+});
+
+/* ============================================
+    INITIALIZE ON DOM READY
+    ============================================ */
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize aria-expanded for accessibility
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (menuToggle) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
+    
+    // Carousel infinite scroll setup
+    const track = document.querySelector('.carousel-track');
+    if (track) {
+        const items = Array.from(track.children);
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            track.appendChild(clone);
+        });
     }
 });
