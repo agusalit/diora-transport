@@ -164,6 +164,7 @@
                 <li><a href="#services" onclick="closeMenu()">Services</a></li>
                 <li><a href="#tours" onclick="closeMenu()">Tours</a></li>
                 <li><a href="#about" onclick="closeMenu()">Why Us</a></li>
+                <li><a href="#testimonials" onclick="closeMenu()">Reviews</a></li>
                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
         </nav>
@@ -485,6 +486,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="section-header">
+                <p class="section-tag">Testimonials</p>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Read reviews from travelers who experienced our service
+                </p>
+            </div>
+            
+            <div class="review-carousel">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous review">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-wrapper">
+                    <div class="review-track" id="reviewTrack">
+                        <!-- reviews will be fetched from google sheets -->
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next review">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <div class="carousel-indicators" id="indicators">
+                    <span class="indicator active" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+            
+            <div class="review-button">
+                <a href="https://forms.gle/bJMqFY4vFmK3ahNj8" class="btn-review" target="_blank">
+                    <i class="fas fa-pen-to-square"></i>
+                    Leave a Review
+                </a>
+            </div>
+        </section>
         
         <section class="contact" id="contact">
             <div class="section-header">
@@ -570,6 +610,7 @@
     <!-- WhatsApp Chat Widget -->
     <script src="https://elfsightcdn.com/platform.js" async></script>
     <div class="elfsight-app-9d7dcbda-3f03-434f-b8b3-63639283ad0c" data-elfsight-app-lazy></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
